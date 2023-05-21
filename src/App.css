@@ -36,3 +36,135 @@
     transform: rotate(360deg);
   }
 }
+
+/* dropdown  element */
+.dropdown {
+  position: relative;
+}
+
+.menu {
+  z-index: 99999;
+  position: absolute;
+  list-style-type: none;
+  margin: -4px 0;
+  padding: 0;
+  border: 1px solid #00000022;
+  width: auto;
+}
+
+/* dropdown items */
+.menu > li {
+  z-index: 99999;
+
+  margin: 0;
+  background-color: white;
+}
+
+.menu > li:hover {
+  z-index: 99999;
+
+  background-color: lightgray;
+}
+
+.menu > li > button {
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  background: none;
+  color: inherit;
+  padding: 5px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.dropdowntext {
+  position: relative;
+}
+
+.item {
+  position: absolute;
+  list-style-type: none;
+  margin: 0px 0;
+  padding: 1px 5px;
+  background-color: #000;
+  width: auto;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.textcontainer{
+  border-color: #c7c7c7;
+  background-color: #fff;
+}
+
+.bc-text{
+  background-color: #edf2fa;
+}
+
+/* on hover text bg color change */
+.itemh:hover{
+  background-color: #dadce0;
+}
+
+/* container Editor */
+.txtcont{
+  max-height: 90vh;
+  max-width: 95vw;
+}
+@media only screen and (max-width: 1600px) {
+  .txtcont{
+    max-width: 90vw;
+  }
+}
+
+/* Editbar hiding elements for responsiveness */
+@media only screen and (max-width: 1600px) {
+  .itemhideedit {
+    display: none;
+  }
+  .itemshowdit{
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1470px) {
+  .itemhideedit2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .itemhideedit3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .itemhideedit4 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .itemhideedit5 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .itemhideedit6 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  .itemhideedit7 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .itemhideedit8 {
+    display: none;
+  }
+}
