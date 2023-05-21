@@ -8,19 +8,24 @@ function Sidebar() {
     // sidebar where Calander and other icons need to show
     let data=[
         {
-            item:Calender
+            item:Calender,
+            src:`https://calendar.google.com/`,
         },
         {
-            item:Contacts
+            item:Contacts,
+            src:`https://contacts.google.com/`,
         },
         {
-            item:Keep
+            item:Keep,
+            src:`https://keep.google.com/u/0/`,
         },
         {
-            item:Maps
+            item:Maps,
+            src:`https://www.google.com/maps`,
         },
         {
-            item:Tasks
+            item:Tasks,
+            src:`https://tasksboard.com/`,
         },
     ]
 
@@ -30,7 +35,9 @@ function Sidebar() {
                 data.map((x,index)=>{
                     return (
                         <div key={index} className="flex w-full h-full p-4 pt-2 pb-6 cursor-pointer">
+                            <a href={x.src} target='_blank' rel="noreferrer" >
                             <img src={x.item} alt=''/>
+                            </a>
                         </div>
                     );
                 })

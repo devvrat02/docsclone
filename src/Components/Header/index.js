@@ -48,7 +48,7 @@ function Header() {
             list:[],
         },
         ]
-    const [filename,setfilename]=useState('4444444444444')
+    const [filename,setfilename]=useState('Untitled Document')
     const setvalue=(e)=>{
         setfilename(e.target.value)
     }
@@ -62,7 +62,7 @@ function Header() {
                 <div className="flex flex-col justify-start ">
                         <div className="flex flex-row items-center">
                             <div className='w-auto' style={{padding:2}}>
-                                <input className=' text-base' value={filename} style={{minWidth:'10px',width:`${filename.length*10}px`}} onChange={setvalue}/>
+                                <input className=' text-base' defaultValue={`Untitled Document`} value={filename} style={{width:`${filename.length>0?`${filename.length*10}px`:'auto '}`}} onChange={setvalue}/>
                             </div>
                             <div className='px-2 cursor-pointer'><MdStarBorder style={styIcon}/></div>
                             <div className='px-2 cursor-pointer'><MdDriveFileMoveOutline style={styIcon}/></div>
