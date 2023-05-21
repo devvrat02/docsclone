@@ -13,7 +13,7 @@ function App() {
   },[])
   const [showHeader,setShowHeader]=useState(true)
   const [showSidebar,setShowSidebar]=useState(true)
-
+  // Note there are various feature are incomplete need to complete 
   // loader condition is checking
   if(loader){
     return(
